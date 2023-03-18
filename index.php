@@ -13,6 +13,9 @@
 </head>
 
 <body>
+  <div class="loading">
+    <img class="loading-img" src="./images/loading.gif" alt="">
+  </div>
   <nav class="nav-container">
     LOGO
   </nav>
@@ -25,7 +28,7 @@
 
             <div class="employee-status-container">
               <div class="employee-status-type">
-                <input id="new-employee" name="new-employee" class="employee-type emp-radio" data-id="New Employee" type="radio">
+                <input checked id="new-employee" name="new-employee" class="employee-type emp-radio" data-id="New Employee" type="radio">
                 <label class="employee-label" for="new-employee">New Employee</label>
               </div>
               <div class="employee-status-type">
@@ -41,15 +44,15 @@
               <div class="left-50">
                 <div class="input-text-contatiner">
                   <label class="employee-label" for="">Name</label>
-                  <input data-id="EmployeeName" class="input-text page-1-empInfo" type="text">
+                  <input required data-id="EmployeeName" class="input-text page-1-empInfo" type="text">
                 </div>
                 <div class="input-text-contatiner">
                   <label class="employee-label" for="">Department</label>
-                  <input data-id="Department" class="input-text page-1-empInfo" type="text">
+                  <input required data-id="Department" class="input-text page-1-empInfo" type="text">
                 </div>
                 <div class="input-text-contatiner">
                   <label class="employee-label" for="">Action Date</label>
-                  <input data-id="ActionDate" class="input-text page-1-empInfo" type="date">
+                  <input required data-id="ActionDate" class="input-text page-1-empInfo" type="date">
                 </div>
               </div>
 
@@ -154,7 +157,7 @@
             <div class="software-container">
             
             </div>
-
+            <button class="btn btn-next page-2-next">Submit</button>
           </div>
         </section>
       </section>
